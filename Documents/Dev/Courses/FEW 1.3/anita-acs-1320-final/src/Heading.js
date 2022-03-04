@@ -2,7 +2,7 @@
 
 function Heading() {
     return (
-      <div>
+      <div className="Heading">
         <p>ACS 1320 Final Assessment</p>
         <p>Anita Bangali</p>
       </div>

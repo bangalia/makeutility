@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Heading from '../Heading';
+import Heading from './Heading';
+import MetalMeta from './MetalMeta';
+import BandList from './BandList';
+
 
 function App() {
   return (
     <div className="App">
       <Heading />
+      <MetalMeta />
+      <BandList />
     </div>
   );
 }
