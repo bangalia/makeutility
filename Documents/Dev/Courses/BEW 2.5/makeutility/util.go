@@ -12,12 +12,12 @@ import (
 
 func main() {
 	urls := []string{
-		"https://github.com/Tech-at-DU/ACS1710-Web-Architecture",
-		"https://github.com/Tech-at-DU/SPD-1.1-Introduction-To-Software-Product-Development",
+		"https://exploringjs.com/impatient-js/downloads/impatient-js-preview-book.pdf",
+		"http://www.cheat-sheets.org/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf",
 		"https://www.dominican.edu/sites/default/files/2020-10/five-year-calendar_2020-2025.pdf",
 	}
 
-	var wg sync.WaitGroup
+	var wg sync.WaitGroup //WaitGroup waits for all launched goroutines to finish
 
 	wg.Add(len(urls))
 
@@ -27,7 +27,7 @@ func main() {
 			tokens := strings.Split(url, "/")
 			fileName := tokens[len(tokens)-1]
 			fmt.Println("Downloading", url, "to", fileName)
-
+			//error expectations
 			output, err := os.Create(fileName)
 			if err != nil {
 				log.Fatal("File creation error", fileName, "-", err)
@@ -48,6 +48,6 @@ func main() {
 			}
 		}(url)
 	}
-	wg.Wait()
+	wg.Wait() // waits for full function to execute before printing statement
 	fmt.Println("Download completed")
 }

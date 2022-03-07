@@ -1,14 +1,10 @@
 package main
 
 import (
-	"fmt"
+	"testing"
 )
 
-func test(testing) {
-	urls := []string{
-		"https://github.com/Tech-at-DU/ACS1710-Web-Architecture",
-
-		fmt.Println("Download completed"),
-	}
+func TestMain(m *testing.M) {
+	main()
 
 }

@@ -1,0 +1,3 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/bangalia/makeutlity)](https://goreportcard.com/report/github.com/bangalia/makeutility)
+
+This is my Golang final project. This project uses a goroutine to download the contents of a wbesite and save them to a file with the website's name. Since the ACS department is now offically apart of Dominican University, the websites I use in this implementation are sites I feel would be useful to anyone starting out in the computer science program.
